@@ -15,7 +15,7 @@ export const Weatherapp = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const apiKey = "a16acffce2105f155b5bab9af7bc83a8"
+            const apiKey = "YOUR-API-KEY"
     
             const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=${setCountry}&units=metric&appid=${apiKey}');
             const jsonData = await response.json();
